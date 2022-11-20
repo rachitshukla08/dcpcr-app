@@ -1,0 +1,13 @@
+.help-btn {
+  padding: 12px 40px;
+  background-color: #039457;
+  color: #ffffff;
+  border-radius: 8px 8px 0px 0px;
+  font-size: larger;
+  transition: 0.15s;
+}
+
+.help-btn:hover {
+  transform: translateY(-8px);
+  border-radius: 8px;
+}

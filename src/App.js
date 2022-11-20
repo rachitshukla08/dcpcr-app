@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Home from "./views/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import { useState } from "react";
+import DisabilityInfo from "./views/DisabilityInfo";
+
+const App = () => {
+  const [name, setName] = useState("rachit");
+  const changeName = () => {
+    setName((prev) => (prev === "rachit" ? "ajay" : "rachit"));
+  };
+
+  const [fname, setFname] = useState("");
+  const [type, setType] = useState("option1");
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const obj = {
+      name: fname,
+      desc: "textarea",
+      type: type,
+    };
+    console.log(obj);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/disability-info" element={<DisabilityInfo />}></Route>
+      </Routes>
+      <Footer />
+      {/* <button onClick={changeName} className="mt-40">
+        Change Name {name}
+      </button>
+      <form onSubmit={submitHandler}>
+        <label>first name</label>
+        <input
+          type="text"
+          value={fname}
+          onChange={(e) => setFname(e.target.value)}
+        />
+        <textarea></textarea>
+        <select value={type} onChange={(e) => setType(e.target.value)}>
+          <option value="option1"></option>
+        </select>
+        <input type="submit" />
+      </form> */}
     </div>
   );
-}
+};
 
 export default App;

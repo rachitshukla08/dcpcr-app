@@ -1,0 +1,11 @@
+.header-element:hover {
+  cursor: pointer;
+}
+
+.dcpcr-img {
+  height: 61px;
+}
+
+.header-element {
+  color: #0a0e6a;
+}

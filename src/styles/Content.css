@@ -1,0 +1,31 @@
+.start-btn {
+  padding: 12px 80px;
+  background-color: #0a0f6a;
+  border: 1px solid #3b3f88;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: larger;
+  transition: 0.15s;
+}
+
+.start-btn:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.centre-align {
+  align-items: center;
+}
+
+.custom-img {
+  background: url("../assets/child-rights.png");
+  background-size: cover;
+}
+
+.background-tint {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+
+.custom-height {
+  min-height: 80vh;
+}

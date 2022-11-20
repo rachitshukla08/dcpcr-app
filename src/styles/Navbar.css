@@ -1,0 +1,11 @@
+.custom-gradient {
+  background-image: linear-gradient(to right, #0a0e6a, #02b86b);
+}
+
+.custom-link {
+  transition: 0.1s;
+}
+
+.custom-link:hover {
+  transform: scale(1.1);
+}
