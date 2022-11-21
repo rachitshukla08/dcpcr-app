@@ -1,4 +1,46 @@
+.disability-card {
+  border-radius: 16px;
+  transform: 0.15s;
+}
+
 .disability-card:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  transform: scale(1.01);
+}
+
+.physical {
+  background-image: url("../assets/disability/physical.png");
+  background-size: cover;
+}
+.intellectual {
+  background-image: url("../assets/disability/intellectual.png");
+  background-size: cover;
+}
+.mental {
+  background-image: url("../assets/disability/mental.png");
+  background-size: cover;
+}
+.neurological {
+  background-image: url("../assets/disability/neurological.png");
+  background-size: cover;
+}
+.blood {
+  background-image: url("../assets/disability/blood.png");
+  background-size: cover;
+}
+.multiple {
+  background-image: url("../assets/disability/multiple.png");
+  background-size: cover;
+}
+
+.background-tint {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+
+.custom-border {
+  border-image: linear-gradient(to right, #0a0e6a, #02b86b) 50;
+  border-top-width: 4px;
+  border-style: solid;
 }
