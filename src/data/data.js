@@ -214,4 +214,28 @@ const essentialDocs = {
   },
 };
 
-export { homeContent, navlinks, contentDis, serviceForm, essentialDocs };
+const resources = {
+  title: "Important Resources",
+  titleContent: "",
+  content: [
+    {
+      liContent: `<li>Important notification or circular</li> 
+    <li>Important Handbooks/Guidebook </li>
+    <li>Article </li>
+    <li>Publication </li>
+    <li>List of resource centers </li>
+    <li>List of medical authorities  </li>
+    `,
+      subLiContent: "",
+    },
+  ],
+};
+
+export {
+  homeContent,
+  navlinks,
+  contentDis,
+  serviceForm,
+  essentialDocs,
+  resources,
+};

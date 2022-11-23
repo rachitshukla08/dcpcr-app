@@ -74,25 +74,34 @@ const ContentFindService = () => {
             <option value="5">Skill & employment</option>
           </select>
         </div>
-
-        <div className="flex flex-col space-y-2">
-          <label className="font-medium">Type of disability?</label>
-          <select
-            name="dtype"
-            className="px-4 py-2 border rounded"
-            value={formData.dtype}
-            onChange={handleChange}
-          >
-            <option value="">Select a disability</option>
-            <option value="Physical disability">Physical disability</option>
-            <option value="Intellectual disability">
-              Intellectual disability
-            </option>
-            <option value="Mental disability">Mental disability</option>
-            <option value="Neurological">Neurological</option>
-            <option value="Blood disorder">Blood disorder</option>
-            <option value="Multiple disability">Multiple disability</option>
-          </select>
+        <div className="relative">
+          {" "}
+          {/* container */}
+          <div className="flex flex-col space-y-2">
+            {" "}
+            {/* label - input */}
+            <div className="notification w-56 p-4 shadow-md">
+              Have you got yourself or the concerned person’s screening &
+              diagnosis done? Check the steps and nearest clinics.
+            </div>
+            <label className="font-medium">Type of disability?</label>
+            <select
+              name="dtype"
+              className="px-4 py-2 border rounded"
+              value={formData.dtype}
+              onChange={handleChange}
+            >
+              <option value="">Select a disability</option>
+              <option value="Physical disability">Physical disability</option>
+              <option value="Intellectual disability">
+                Intellectual disability
+              </option>
+              <option value="Mental disability">Mental disability</option>
+              <option value="Neurological">Neurological</option>
+              <option value="Blood disorder">Blood disorder</option>
+              <option value="Multiple disability">Multiple disability</option>
+            </select>
+          </div>
         </div>
 
         <div className="flex flex-col space-y-2">
