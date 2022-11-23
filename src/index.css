@@ -36,3 +36,13 @@ code {
 .fw-400 {
   font-weight: 400;
 }
+
+.custom-border {
+  border-image: linear-gradient(to right, #0a0e6a, #02b86b) 50;
+  border-top-width: 4px;
+  border-style: solid;
+}
+
+button:active {
+  transform: scale(0.99);
+}

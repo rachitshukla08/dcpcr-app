@@ -39,8 +39,4 @@
   background-blend-mode: multiply;
 }
 
-.custom-border {
-  border-image: linear-gradient(to right, #0a0e6a, #02b86b) 50;
-  border-top-width: 4px;
-  border-style: solid;
-}
+

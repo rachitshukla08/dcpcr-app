@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { contentDis } from "../data/data";
 import "../styles/ContentDis.css";
-import parse from "html-react-parser";
+import DisabilityCard from "./DisabilityCard";
 
 const ContentDis = () => {
   const [disabilityType, setDisabilityType] = useState("default");
@@ -9,6 +9,10 @@ const ContentDis = () => {
   const setType = (type) => {
     filter(type);
     setDisabilityType(type);
+    window.scrollTo({
+      top: 80,
+      behavior: "smooth",
+    });
   };
   const filter = (type) => {
     let filteredData = contentDis.cards.filter((card) => {
@@ -34,22 +38,9 @@ const ContentDis = () => {
           </div>
         </div>
       );
-    } else if (disabilityType === "physical") {
-      return (
-        <div className="flex flex-col gap-4 mx-20 px-10 pb-10 shadow-lg pt-5 custom-border">
-          <p className="text-xl">{contentDis.physical.title}</p>
-          <p className="fw-400">{contentDis.physical.titleContent}</p>
-          <ul className="list-decimal pl-8">
-            <li>
-              <span className="">{contentDis.physical.liTitle}</span>
-              <span className="fw-400"> {contentDis.physical.liContent}</span>
-            </li>
-            <ul className="list-disc pl-8 pt-4">
-              {parse(contentDis.physical.subLiContent)}
-            </ul>
-          </ul>
-        </div>
-      );
+    } else {
+      const disability = contentDis[disabilityType];
+      return <DisabilityCard disability={disability} />;
     }
   };
   return (

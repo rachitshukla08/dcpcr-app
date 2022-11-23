@@ -1,12 +1,14 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Home from "./views/Home";
 
 import { Routes, Route } from "react-router-dom";
 
+import Home from "./views/Home";
 import DisabilityInfo from "./views/DisabilityInfo";
-import Services from "./views/Services";
+import FindService from "./views/FindService";
+import SearchResults from "./views/SearchResults";
+import EssentialDocs from "./views/EssentialDocs";
 
 const App = () => {
   // const [name, setName] = useState("rachit");
@@ -33,7 +35,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/disability-info" element={<DisabilityInfo />}></Route>
-        <Route path="/service" element={<Services />}></Route>
+        <Route path="/service" element={<FindService />}></Route>
+        <Route path="/search-results" element={<SearchResults />}></Route>
+        <Route path="/docs" element={<EssentialDocs />}></Route>
       </Routes>
       <Footer />
       {/* <button onClick={changeName} className="mt-40">

@@ -9,3 +9,11 @@
 .custom-link:hover {
   transform: scale(1.1);
 }
+
+.search-icon {
+  transform: translate(-150%, 50%);
+}
+
+.search-icon:hover {
+  cursor: pointer;
+}
