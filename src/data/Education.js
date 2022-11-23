@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 
 const education1 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. 3% reservation for Persons with Disabilities among Economically
         Weaker Sections/Disadvantaged Group in private schools
         <br />
@@ -16,9 +17,10 @@ const education1 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. 40% or more disability in 21 conditions as defined by Rights of
         Persons with Disabilities Act, 2016
         <br />
@@ -28,9 +30,10 @@ const education1 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Completed application form
         <br />
         ii. 2 Passport size photographs
@@ -73,29 +76,42 @@ const education1 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
-        <Link to='http://edustud.nic.in/mis/studentadmission/webfom1.aspx' />
+      <p className='text-sm font-light my-1'>
+        <Link
+          className='font-medium text-teal-500'
+          to='http://edustud.nic.in/mis/studentadmission/webfom1.aspx'
+        >
+          http://edustud.nic.in/mis/studentadmission/webfom1.aspx
+        </Link>
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         The online application will be available at the beginning of the
         academic year, generally in March/April. Specific details are available
         at:
         <br />
-        <Link to='http://edustud.nic.in/mis/studentadmission' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://edustud.nic.in/mis/studentadmission'
+        >
+          http://edustud.nic.in/mis/studentadmission
+        </Link>
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Directorate of Education, Room No.12 Old
         Secretariat, near Vidhan Sabha Metro Station, Civil Lines, New Delhi,
         Delhi 110054; 011 2389 0363; diredu@nic.in
@@ -110,9 +126,10 @@ const education1 = [
 
 const education2 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Reader allowance at Rs. 660/- per child for 06 months to Students
         with Blindness
         <br />
@@ -140,9 +157,10 @@ const education2 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Children with Disabilities studying Pre-School to Class XII in Schools
         of MCD, MCD Aided, NDMC, NDMC Aided, and DCB, Govt. & Govt. Aided
         Schools of Directorate of Education
@@ -150,19 +168,26 @@ const education2 = [
     ),
   },
   {
+    id: 3,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         For guidelines for admissions for CWSN under EWS/ DG category, please
         read
-        <Link to='http://edustud.nic.in/mis/studentadmission/Instructionsbi-lingual%20_new%2021012018.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://edustud.nic.in/mis/studentadmission/Instructionsbi-lingual%20_new%2021012018.pdf'
+        >
+          http://edustud.nic.in/mis/studentadmission/Instructionsbi-lingual%20_new%2021012018.pdf
+        </Link>
       </p>
     ),
   },
   {
+    id: 4,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Departmental Level : Directorate of Education, Room No.12 Old
         Secretariat, near Vidhan Sabha Metro Station, Civil Lines, New Delhi,
         Delhi 110054; 011 2389 0363; diredu@nic.in
@@ -177,9 +202,10 @@ const education2 = [
 
 const education3 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         <strong>Provisions related to Scribes/Readers:</strong>
         <br />
         i. The candidates can get their own scribe/reader (qualification one
@@ -255,17 +281,19 @@ const education3 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Child must be a student of class X/XII under CBSE
       </p>
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         1. Relevant medical certificate issued by:
         <br />
         i. Disability Certificates issued by Government hospitals controlled by
@@ -292,9 +320,10 @@ const education3 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Students studying in CBSE schools and desirous of availing the
         exemptions/concessions should approach the concerned Regional Office of
         CBSE through the Head of their Institution supported by relevant medical
@@ -307,9 +336,10 @@ const education3 = [
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         1. Schools will inform to the PWD candidates about
         exemptions/concessions extended by CBSE during annual examinations;
         Schools will make a list of PWD students after submitting LOC: At the
@@ -339,9 +369,10 @@ const education3 = [
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Central Board of Secondary Education, PS-1-2,
         Institutional Area I.P.Extn. Patparganj, Delhi-110 092; Phone -
         91-11-22239177-80,222359-48/04; Email - rodelhi.cbse@nic.in
@@ -356,9 +387,10 @@ const education3 = [
 
 const education4 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Pre-Matric Scholarship is to support students with disabilities for
         their study in classes IX and X onwards so that the incidence of
         drop-out, especially in the transition from the elementary to the
@@ -367,9 +399,10 @@ const education4 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Full-time student of class IX or class X in a government recognised
         school.
         <br />
@@ -380,9 +413,10 @@ const education4 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         1. Photo of the applicant
         <br />
         2. Certificate of previous academic mark sheet
@@ -400,17 +434,25 @@ const education4 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
-        Apply online at - <link to='https://scholarships.gov.in/' />
+      <p className='text-sm font-light my-1'>
+        Apply online at -
+        <Link
+          className='font-medium text-teal-500'
+          to='https://scholarships.gov.in/'
+        >
+          https://scholarships.gov.in/
+        </Link>
       </p>
     ),
   },
   {
+    id: 5,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Ministry of Social Justice and Empowerment, Govt of
         India, Room no. 202, 2nd floor C-wing, Shastri Bhawan, New Delhi, Delhi
         110001; Phone - 011 2338 1001, Email- pk.singh72@nic.in
@@ -425,9 +467,10 @@ const education4 = [
 
 const education5 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Post-Matric Scholarship is to support students with disabilities for
         their study in classes XI and XII onwards so that the incidence of
         drop-out, especially in the transition from the secondary to the higher
@@ -436,9 +479,10 @@ const education5 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Students studying in all recognised post-matriculation courses.
         Courses at the level of undergraduate, postgraduate degree/diploma/
         certificate are also covered under this scheme
@@ -450,9 +494,10 @@ const education5 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         1. Photograph of the applicant.
         <br />
         2. Birth Certificate or any valid proof of age.
@@ -470,17 +515,25 @@ const education5 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
-        Apply online at - <Link to='https://scholarships.gov.in/' />
+      <p className='text-sm font-light my-1'>
+        Apply online at -
+        <Link
+          className='font-medium text-teal-500'
+          to='https://scholarships.gov.in/'
+        >
+          https://scholarships.gov.in/
+        </Link>
       </p>
     ),
   },
   {
+    id: 5,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Ministry of Social Justice and Empowerment, Govt of
         India, Room no. 202, 2nd floor C-wing, Shastri Bhawan, New Delhi, Delhi
         110001; Phone - 011 2338 1001, Email- pk.singh72@nic.in
@@ -495,9 +548,10 @@ const education5 = [
 
 const education6 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         The Scholarship for Top Class Education aims at recognizing and
         promoting quality education amongst students with disabilities by
         providing full financial support. It covers students with disabilities
@@ -508,9 +562,10 @@ const education6 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Be pursuing studies at graduate/postgraduate degree/diploma level in
         notified institutions of excellence in education
         <br />
@@ -522,17 +577,25 @@ const education6 = [
   },
 
   {
+    id: 3,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
-        Apply online at - <Link to='https://scholarships.gov.in/' />
+      <p className='text-sm font-light my-1'>
+        Apply online at -
+        <Link
+          className='font-medium text-teal-500'
+          to='https://scholarships.gov.in/'
+        >
+          https://scholarships.gov.in/
+        </Link>
       </p>
     ),
   },
   {
+    id: 4,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Ministry of Social Justice and Empowerment, Govt of
         India, Room no. 202, 2nd floor C-wing, Shastri Bhawan, New Delhi, Delhi
         110001; Phone - 011 2338 1001, Email- pk.singh72@nic.in
@@ -547,9 +610,10 @@ const education6 = [
 
 const education7 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         The National Fellowship for PWD aims to provide financial assistance to
         the students with disabilities for pursuing higher education leading to
         degrees such as M.Phil and Ph.D in India.
@@ -557,9 +621,10 @@ const education7 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Any student with 40% or more disability
         <br />
         ii. Admitted to full-time M.Phil./Ph.D. degree in a recognized
@@ -568,17 +633,26 @@ const education7 = [
     ),
   },
   {
+    id: 3,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
-        Apply online at - <Link to='https://nfpwd.ugc.ac.in/' />
+      <p className='text-sm font-light my-1'>
+        Apply online at -
+        <Link
+          className='font-medium text-teal-500'
+          to='https://nfpwd.ugc.ac.in/'
+        >
+          {' '}
+          https://nfpwd.ugc.ac.in/{' '}
+        </Link>
       </p>
     ),
   },
   {
+    id: 4,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: University Grants Commission Email -
         sosa3ugc@gmail.com
         <br />
@@ -593,9 +667,10 @@ const education7 = [
 
 const education8 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         The National Overseas Scholarship for PWD aims to provides financial
         assistance to the students with disabilities who are selected for
         pursuing Master's level courses and Ph.D abroad in the following
@@ -607,9 +682,10 @@ const education8 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Students with 40 % or more disability; Below 35 years and family
         income not more than Rs 6,00,000 per annum.
         <br />
@@ -622,11 +698,17 @@ const education8 = [
     ),
   },
   {
+    id: 3,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Offline Application is available in the link below.
-        <Link to='http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50'
+        >
+          http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50
+        </Link>
         <br />
         Application needs to be submitted at: O/o Patient Welfare Cell, Room no
         1, 6th Floor, Directorate of Health Services, F-17, Karkardooma,
@@ -636,12 +718,13 @@ const education8 = [
     ),
   },
   {
+    id: 4,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Under Secretary (Scholarships), Department of
         Empowerment of Persons with Disabilities, Room No. 516, 5th Floor,
-        Paryavaran Bhawan, CGO Complex, Lodhi Road, New Delhi – 110003; Email:
+        Paryavaran Bhawan, CGO Complex, Lodhi Road, New Delhi - 110003; Email:
         pwdcgo@gmail.com
         <br />
         At Appellate Level: Office of the Chief Commissioner for Persons with

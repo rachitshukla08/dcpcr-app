@@ -5,7 +5,7 @@ import "../styles/FindService.css";
 const ContentFindService = () => {
   const [formData, setFormData] = useState({
     date: "",
-    income: "",
+    income: 0,
     catagory: "0",
     dtype: "",
     dpercentage: 0,
@@ -19,7 +19,7 @@ const ContentFindService = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/search-results?catagory=${formData.catagory}`);
+    navigate(`/search-results?catagory=${formData.catagory}&dob=${formData.date}&income=${formData.income}&dprecentage=${formData.dpercentage}`);
   };
 
   return (
@@ -30,6 +30,7 @@ const ContentFindService = () => {
         </h3>
       </div>
       <form className="space-y-4 px-8 py-4" onSubmit={handleSubmit}>
+
         <div className="flex flex-col space-y-2">
           <label className="font-medium">Date of Birth?</label>
           <input
@@ -41,16 +42,19 @@ const ContentFindService = () => {
             required
           />
         </div>
+
         <div className="flex flex-col space-y-2">
           <label className="font-medium">Annual Family Income (Optional)</label>
           <input
             className="px-4 py-2 border rounded"
             type="number"
+            min={0}
             name="income"
             value={formData.income}
             onChange={handleChange}
           />
         </div>
+
         <div className="flex flex-col space-y-2">
           <label className="font-medium">
             Any specific category of scheme and services, you are interested in?
@@ -70,43 +74,42 @@ const ContentFindService = () => {
             <option value="5">Skill & employment</option>
           </select>
         </div>
-        <div className="relative">
-          {" "}
-          {/* container */}
-          <div className="flex flex-col space-y-2">
-            {" "}
-            {/* label - input */}
-            <label className="font-medium">Type of disability?</label>
-            <select
-              name="dtype"
-              className="px-4 py-2 border rounded"
-              value={formData.dtype}
-              onChange={handleChange}
-            >
-              <option value="">Select a disability</option>
-              <option value="Physical disability">Physical disability</option>
-              <option value="Intellectual disability">
-                Intellectual disability
-              </option>
-              <option value="Mental disability">Mental disability</option>
-              <option value="Neurological">Neurological</option>
-              <option value="Blood disorder">Blood disorder</option>
-              <option value="Multiple disability">Multiple disability</option>
-            </select>
-          </div>
+
+        <div className="flex flex-col space-y-2">
+          <label className="font-medium">Type of disability?</label>
+          <select
+            name="dtype"
+            className="px-4 py-2 border rounded"
+            value={formData.dtype}
+            onChange={handleChange}
+          >
+            <option value="">Select a disability</option>
+            <option value="Physical disability">Physical disability</option>
+            <option value="Intellectual disability">
+              Intellectual disability
+            </option>
+            <option value="Mental disability">Mental disability</option>
+            <option value="Neurological">Neurological</option>
+            <option value="Blood disorder">Blood disorder</option>
+            <option value="Multiple disability">Multiple disability</option>
+          </select>
         </div>
+
         <div className="flex flex-col space-y-2">
           <label className="font-medium">
             Disability percentage % (Optional)
           </label>
           <input
             className="px-4 py-2 border rounded"
-            type="text"
+            type="number"
+            min={0}
+            max={100}
             name="dpercentage"
             value={formData.dpercentage}
             onChange={handleChange}
           />
         </div>
+
         <div className="flex justify-around items-center">
           <button
             className="w-28 border  hover:bg-gray-100 px-4 py-2 rounded-md custom-reset"
@@ -121,6 +124,7 @@ const ContentFindService = () => {
             Search
           </button>
         </div>
+
       </form>
     </div>
   );

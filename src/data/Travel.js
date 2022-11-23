@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 
 const travel1 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Facility of free travelling in DTC Buses
         <br />
         ii. The facility of 50% concession to the escort for those who have 100%
@@ -13,21 +14,28 @@ const travel1 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applicant should have 40% and above disability and be a resident of
         Delhi
       </p>
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Card issued by Sub Divisional Magistrate (SDM) at the district
         magistrate office. Form placed:
-        <Link to='https://drive.google.com/file/d/1KiJvdm2dtHJpfyxKNifUBpJtu3R4nPPz/view' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://drive.google.com/file/d/1KiJvdm2dtHJpfyxKNifUBpJtu3R4nPPz/view'
+        >
+          https://drive.google.com/file/d/1KiJvdm2dtHJpfyxKNifUBpJtu3R4nPPz/view
+        </Link>
         <br />
         ii. Residential proof
         <br />
@@ -38,9 +46,10 @@ const travel1 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         <strong>Offline</strong>
         <br />
         Concessional application forms can be obtained from the respective
@@ -50,17 +59,19 @@ const travel1 = [
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- DELHI TRANSPORT CORPORATION (HQ) (Govt. of NCT of
         Delhi) I.P. Estate: New Delhi-110002; Phone - 23370236; Email -
         bus-pass@dtc.nic.in
@@ -76,9 +87,10 @@ const travel1 = [
 
 const travel2 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         <strong>For PWD Reservation</strong>
         <br />
         i. A reservation quota of two sleeper class berths in all trains running
@@ -145,9 +157,10 @@ const travel2 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         <strong>For PWD</strong>
         <br />
         i. Orthopedically Handicapped/Paraplegic persons travelling alone or
@@ -178,9 +191,10 @@ const travel2 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         <strong>For PWD</strong>
         <br />
         <strong>Offline</strong>
@@ -218,16 +232,22 @@ const travel2 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         <strong>For PWD: Offline</strong>
         <br />
         Submit the duly filled concession certificate to the prescribed medical
         hospitals
         <br />
         The link to the concession certificate is given below:
-        <Link to='http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Passenger_Information_2018/Concession%20Certificate.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Passenger_Information_2018/Concession%20Certificate.pdf'
+        >
+          http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Passenger_Information_2018/Concession%20Certificate.pdf
+        </Link>
         <br />
         <strong>For PWD: Online</strong>
         <br />
@@ -269,11 +289,21 @@ const travel2 = [
         <br />
         iii. The form for outward journey can be found on the link below:
         <br />
-        <Link to='http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Concession_Certificate_Patients_Onward.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Concession_Certificate_Patients_Onward.pdf'
+        >
+          http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Concession_Certificate_Patients_Onward.pdf
+        </Link>
         <br />
         iv. The form for return journey can be found on the link:
         <br />
-        <Link to='http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Concession_Certificate_Patients_Returns.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Concession_Certificate_Patients_Returns.pdf'
+        >
+          http://www.indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/Concession_Certificate_Patients_Returns.pdf
+        </Link>
         <br />
         v. The concession would be provided after the ticket booking authority
         verifies the duly filled form, by Hospital authorities."
@@ -281,17 +311,19 @@ const travel2 = [
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- INDIAN RAILWAYS Address : Federation of Railway
         Officers Association Office, 256-A, Rail Bhavan, Raisina Road, New Delhi
         -11000; Phone: (Rly) 43468 (P&T) 23389155; Email - secyfroa@gmail.com
@@ -307,9 +339,10 @@ const travel2 = [
 
 const travel3 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. 50% concessional fare to blind persons on single journey or single
         fare for round trip journeys on all domestic flights.
         <br />
@@ -321,17 +354,19 @@ const travel3 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Persons who are 100% blind and residents of India
       </p>
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Photocopy of the certificate issued by an Eye Hospital or Medical
         Practitioner (not less than MBBS), stating that the person is totally
         blind in both the eyes.
@@ -339,25 +374,28 @@ const travel3 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Ticket to be purchased 3 days before departure
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- Air India Limited, Airlines House, 113, Gurudwara
         Rakabganj Road, New Delhi - 110 001 24x7 Customer Care number -
         0124-2641407 / 020-26231407 / 1860 2331407 , Email-
@@ -374,9 +412,10 @@ const travel3 = [
 
 const travel4 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Discount of 50% of Basic fare of select booking class in Economy
         cabin.
         <br />
@@ -386,9 +425,10 @@ const travel4 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Disabled persons suffering from locomotor disability to the extent of
         80% and above and are residents of India. Conditions falling under this
         category include cases of- Paraplegia, Hemiplegia, Cerebral palsy,
@@ -397,34 +437,38 @@ const travel4 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Disability Certificate issued by a Chief District medical officer or a
         board constituted by Government hospital.
       </p>
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Ticket to be purchased 3 days before departure.
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- INDIAN RAILWAYS Address : Federation of Railway
         Officers Association Office, 256-A, Rail Bhavan, Raisina Road, New Delhi
         -11000; Phone: (Rly) 43468 (P&T) 23389155; Email - secyfroa@gmail.com

@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 
 const skills1 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Free of cost training according to the National Skills Qualification
         Framework (NSQF), Training in Soft Skills, Entrepreneurship, Financial
         and Digital Literacy. Duration of the training varies per job role,
@@ -15,9 +16,10 @@ const skills1 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Indian national, unemployed youth or, school/college dropouts
         <br />
         ii. Possesses an Aadhaar card and a bank account
@@ -34,9 +36,10 @@ const skills1 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Disability Certificate
         <br />
         ii. Aadhar card
@@ -48,26 +51,34 @@ const skills1 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Online Apply through:
-        <Link to='https://skillgrid.scpwd.in/' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://skillgrid.scpwd.in/'
+        >
+          https://skillgrid.scpwd.in/
+        </Link>
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level - Ministry of Skill Development and
         Entrepreneurship; Email - PMKVY@nsdcindia.org Office of Skill Council
         for Person with Disability 501-City Centre, 12/5 Dwarka, New Delhi -
@@ -83,9 +94,10 @@ const skills1 = [
 
 const skills2 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Interviewing adult handicapped persons for knowing their personal,
         social, family, educational, economic and vocational background causing
         adjustment problems.
@@ -127,9 +139,10 @@ const skills2 = [
     ),
   },
   {
+    id: 2,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Please visit the center to access the entitlements and services.
         <br />
         Address: VRC for Handicapped, Plot No. 9-11, Karkar Dooma, Vikas Marg,
@@ -144,9 +157,10 @@ const skills2 = [
     ),
   },
   {
+    id: 3,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- Ministry of Labour & Employment Govt. of
         India,Shram Shakti Bhawan Rafi Marg, New Delhi-110001, India Email-
         Ea-labour@gov.in, Phone-23710446
@@ -162,9 +176,10 @@ const skills2 = [
 
 const skills3 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Free skill training through recognised training institutions
         <br />
         ii. 30% reservation for women candidates in each training program
@@ -172,9 +187,10 @@ const skills3 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. A citizen of India, with not less than 40% disability and having a
         disability certificate
         <br />
@@ -188,39 +204,58 @@ const skills3 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         List of documents required have been placed in link below:
         <br />
-        <Link to='https://drive.google.com/file/d/1xE8JZOAIoHRdLM5OVQuTyDsulrZT7EJZ/view' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://drive.google.com/file/d/1xE8JZOAIoHRdLM5OVQuTyDsulrZT7EJZ/view'
+        >
+          https://drive.google.com/file/d/1xE8JZOAIoHRdLM5OVQuTyDsulrZT7EJZ/view
+        </Link>
       </p>
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
-        <Link to='http://disabilityaffairs.gov.in/upload/uploadfiles/files/LIST%20OF%20ETPs.pdf' />
+      <p className='text-sm font-light my-1'>
+        <Link
+          className='font-medium text-teal-500'
+          to='http://disabilityaffairs.gov.in/upload/uploadfiles/files/LIST%20OF%20ETPs.pdf'
+        >
+          http://disabilityaffairs.gov.in/upload/uploadfiles/files/LIST%20OF%20ETPs.pdf
+        </Link>
         <br />
         list of empanelled training institutes here.
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         For information about application deadlines visit-
         <br />
-        <Link to='http://disabilityaffairs.gov.in/content/upload/uploadfiles/files/RevisedSIPDAGuidelines3.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://disabilityaffairs.gov.in/content/upload/uploadfiles/files/RevisedSIPDAGuidelines3.pdf'
+        >
+          http://disabilityaffairs.gov.in/content/upload/uploadfiles/files/RevisedSIPDAGuidelines3.pdf
+        </Link>
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- Department of Empowerment of Persons with
         Disabilities Ministry of Social Justice & Empowerment, Government of
         India Address: Paryavaran Bhawan, B-II Block, 5th Floor, Lodhi Rd, CGO

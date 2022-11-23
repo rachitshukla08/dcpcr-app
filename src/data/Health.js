@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 
 const health1 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Financial assistance upto Rs 5,00,000 to patients for treatment of any
         illness/disease in government hospitals run by Delhi government or
         central government or local bodies or autonomous hospitals under the
@@ -13,9 +14,10 @@ const health1 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Annual family income upto Rs 3,00,000
         <br />
         ii. Bonafide resident of Delhi for the last 3 years (prior to the date
@@ -28,9 +30,10 @@ const health1 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         The photocopies of these documents are to be attached with the
         application and the original is to be brought at the time of submission
         of same for verification
@@ -77,12 +80,18 @@ const health1 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Offline Application is available in the link below.
         <br />
-        <Link to='http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50'
+        >
+          http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50
+        </Link>
         <br />
         Application needs to be submitted at: O/o Patient Welfare Cell, Room no
         1, 6th Floor, Directorate of Health Services, F-17, Karkardooma,
@@ -92,17 +101,19 @@ const health1 = [
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: O/o Patient Welfare Cell, Room no 1, 6th Floor,
         Directorate of Health Services, F-17, Karkardooma, Delhi-110032; Phone -
         011-22306851, Email- dirdhs@nic.in
@@ -118,18 +129,20 @@ const health1 = [
 
 const health2 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Financial assistance upto Rs 1,50,000 to patients for treatment of
         diseases in Government hospitals only
       </p>
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Annual family income upto Rs 1,00,000
         <br />
         ii. Bonafide resident of Delhi for the last 3 years (prior to the date
@@ -140,9 +153,10 @@ const health2 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         The photocopies of these documents are to be attached with the
         application and the original is to be brought at the time of submission
         of same for verification
@@ -188,12 +202,18 @@ const health2 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Offline Application is available in the link below:
         <br />
-        <Link to='http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50'
+        >
+          http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50
+        </Link>
         <br />
         Application needs to be submitted at: O/o Patient Welfare Cell, Room no
         1, 6th Floor, Directorate of Health Services, F-17, Karkardooma,
@@ -203,17 +223,19 @@ const health2 = [
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: O/o Patient Welfare Cell, Room no 1, 6th Floor,
         Directorate of Health Services, F-17, Karkardooma, Delhi-110032; Phone -
         011-22306851, Email- dirdhs@nic.in
@@ -229,9 +251,10 @@ const health2 = [
 
 const health3 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         1. For income upto Rs 22,500 full assistance for the cost of aids and
         appliances will be provided
         <br />
@@ -268,9 +291,10 @@ const health3 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. An Indian citizen of any age.
         <br />
         ii. Holds a 40% Disability Certificate.
@@ -292,9 +316,10 @@ const health3 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         1. Proof of identity
         <br />
         2. Identity proof of beneficiaries (Photocopy of any one)
@@ -351,12 +376,18 @@ const health3 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Online Applications are accepted at
         <br />
-        <Link to='http://onlinedetails.in/alimco/OnlineRegistration.aspx' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://onlinedetails.in/alimco/OnlineRegistration.aspx'
+        >
+          http://onlinedetails.in/alimco/OnlineRegistration.aspx
+        </Link>
         <br />
         One can also request along with required documents to the given address
         below: Ministry of Social Justice & Empowerment, Department of
@@ -366,17 +397,19 @@ const health3 = [
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Department of Empowerment of Persons with
         Disabilities (Divyangjan) 5th Floor, Pt Deen Dayal Antyodaya Bhawan CGO
         Complex, New Delhi, Email - pwdcgo@gmail.com
@@ -392,9 +425,10 @@ const health3 = [
 
 const health4 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         100% subsidy for income less than Rs 15,000/- per month OR 50% subsidy
         for income between Rs 15,000 to Rs 20,000 per month for Cochlear implant
         surgery
@@ -402,9 +436,10 @@ const health4 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Child must be an Indian Citizen with a family income of less than Rs
         20,000 per month
         <br />
@@ -418,9 +453,10 @@ const health4 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Birth Certificate of the child
         <br />
         ii. Caste Certificate of the Father if applicable
@@ -440,14 +476,20 @@ const health4 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         <strong>Online</strong>
         <br />
         Fill up the Online form at this link and attach the scanned copy of
         supporting documents
-        <Link to='http://adipcochlearimplant.in/Application-Instruction.aspx' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://adipcochlearimplant.in/Application-Instruction.aspx'
+        >
+          http://adipcochlearimplant.in/Application-Instruction.aspx
+        </Link>
         <br />
         <strong>Offline</strong>
         <br />
@@ -460,17 +502,19 @@ const health4 = [
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Regional Center of AYJNISHD, NIMH Building, Plot
         No. 44-A, Block - C, Sector-40, Gautam Budh Nagar, Noida -201303 Phone:
         0120-2500474/2500484 E-mail: adnrc-nihh@nic.in,ayjnihhnrc@gmail.com

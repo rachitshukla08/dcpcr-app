@@ -31,6 +31,7 @@ const ContentDis = () => {
               className="underline decoration-indigo-500"
               href={contentDis.defaultLink}
               target="_blank"
+              rel="noreferrer"
             >
               {" "}
               {contentDis.defaultLink}

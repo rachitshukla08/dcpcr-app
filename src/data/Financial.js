@@ -2,17 +2,19 @@ import { Link } from 'react-router-dom';
 
 const financial1 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Financial assistance of Rs 2500 per month.
       </p>
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Person with 40% or more disability of any age
         <br />
         ii. Family income less than Rs. 1,00,000/- per annum.
@@ -29,9 +31,10 @@ const financial1 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Adhar card is mandatory
         <br />
         ii. Age proof (As in the 10th Marksheet or any other ID issued by the
@@ -46,36 +49,54 @@ const financial1 = [
         <br />
         vii. Income self-declaration in the format given on the portal at the
         following link:
-        <Link to='https://edistrict.delhigovt.nic.in/Downloads/ApplicationForm/SelfDeclaration_Social_Income.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://edistrict.delhigovt.nic.in/Downloads/ApplicationForm/SelfDeclaration_Social_Income.pdf'
+        >
+          https://edistrict.delhigovt.nic.in/Downloads/ApplicationForm/SelfDeclaration_Social_Income.pdf
+        </Link>
       </p>
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Online form available at the eDistrict portal on the following link:
         <br />
-        <Link to='https://edistrict.delhigovt.nic.in/' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://edistrict.delhigovt.nic.in/'
+        >
+          https://edistrict.delhigovt.nic.in/
+        </Link>
         <br />
         Detailed guidelines placed in the link below:
         <br />
-        <Link to='https://drive.google.com/file/d/1WWDdAV4P1vR48nUM3BNq4fbTgKI1qTsN/view' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://drive.google.com/file/d/1WWDdAV4P1vR48nUM3BNq4fbTgKI1qTsN/view'
+        >
+          https://drive.google.com/file/d/1WWDdAV4P1vR48nUM3BNq4fbTgKI1qTsN/view
+        </Link>
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level: Director of Social Welfare Department of Social
         Welfare, Govt. of NCT of Delhi,GLNS Complex, Delhi Gate New Delhi - 110
         001 23314810, Fax:23714826, Email - dsw@nic.in
@@ -90,9 +111,10 @@ const financial1 = [
 
 const financial2 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         To provide concessional credit for the benefit of the persons with
         disabilities (Disability as defined in PwD Act, 2016 or its amendments)
         <br />
@@ -121,9 +143,10 @@ const financial2 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Any Indian citizen above 18 years of age with 40% or more disability
         <br />
         ii. For persons with mental retardation, the eligible age would be above
@@ -134,9 +157,10 @@ const financial2 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Disability Certificate
         <br />
         ii. Age certificate issued by competent authority authorized by the
@@ -147,30 +171,38 @@ const financial2 = [
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Application in the prescribed format is to be submitted to the
         implementing agency for sanction of loan as per procedure & general
         terms & conditions as laid down, from time to time, by National
         Handicapped Finance and Development Corporation. For more information
         visit-
-        <Link to='http://www.nhfdc.nic.in/schemes/DIVYANGJAN%20SWAVALAMBAN%20YOJANA.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='http://www.nhfdc.nic.in/schemes/DIVYANGJAN%20SWAVALAMBAN%20YOJANA.pdf'
+        >
+          http://www.nhfdc.nic.in/schemes/DIVYANGJAN%20SWAVALAMBAN%20YOJANA.pdf
+        </Link>
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Applications are accepted on a rolling basis.
       </p>
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- Phd House, Iii Floor,4/2 August Kranti Marg, Block
         A, Nipccd Campus, Hauz Khas, New Delhi, 11001, Phone: 011 4580 3730,
         Email- phdcci@phdcci.in
@@ -186,9 +218,10 @@ const financial2 = [
 
 const financial3 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. A Rs. 75,000 deduction is allowed for people with 40% disability.
         <br />
         ii. Rs. 1,25,000 deduction is allowed for people with 80 % severe
@@ -197,42 +230,61 @@ const financial3 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         Any Indian citizen above 18 years of age with 40% or more disability
       </p>
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Disability Certificate
         <br />
         ii. Income Certificate according to Section 139 for the pertinent year
         of assessment. Download here-
-        <Link to='https://edistrict.delhigovt.nic.in/eDownload/InputForm/Input_9055.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://edistrict.delhigovt.nic.in/eDownload/InputForm/Input_9055.pdf'
+        >
+          https://edistrict.delhigovt.nic.in/eDownload/InputForm/Input_9055.pdf
+        </Link>
       </p>
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
-        <Link to='https://www.incometaxindia.gov.in/Pages/downloads/income-tax-return.aspx' />
+      <p className='text-sm font-light my-1'>
+        <Link
+          className='font-medium text-teal-500'
+          to='https://www.incometaxindia.gov.in/Pages/downloads/income-tax-return.aspx'
+        >
+          https://www.incometaxindia.gov.in/Pages/downloads/income-tax-return.aspx
+        </Link>
         <br />
         In cases of disabilities such as autism and cerebral palsy, Form 10-IA
         on the website additionally needs to be filled up which can be found in
         the following link:
-        <Link to='https://www.incometaxindia.gov.in/forms/income-tax%20rules/103120000000007833.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://www.incometaxindia.gov.in/forms/income-tax%20rules/103120000000007833.pdf'
+        >
+          https://www.incometaxindia.gov.in/forms/income-tax%20rules/103120000000007833.pdf
+        </Link>
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         As per the Income Tax Act, a person is required to file his/her return
         in the relevant assessment year by July 31 (unless deadline extended) to
         claim the refund. The fiscal year immediately succeeding a financial
@@ -241,9 +293,10 @@ const financial3 = [
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- Commissioner of Income Tax (Helpline), 23378047
         (Tele Fax), R. No. 210, C. R. Building, I. P. Estate, New
         Delhi.Email:delhi.pccit.neac@incometax.gov.in
@@ -259,9 +312,10 @@ const financial3 = [
 
 const financial4 = [
   {
+    id: 1,
     title: 'What are the entitlements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Dependent person with disability - A dependent person with disability
         is one who has at least 40% of any of the specified disabilities. The
         family member who takes care of the medical charges of the dependent
@@ -275,9 +329,10 @@ const financial4 = [
     ),
   },
   {
+    id: 2,
     title: 'What are the eligibility requirements?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Any person who is a part of the Hindu Undivided Family (HUF) and has
         a disabled person as a dependent can claim this deduction.
         <br />
@@ -294,31 +349,44 @@ const financial4 = [
     ),
   },
   {
+    id: 3,
     title: 'What are the documents required?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         i. Disability Certificate
         <br />
         ii. Income Certificate according to Section 139 for the pertinent year
         of assessment. Download here-
-        <Link to='https://edistrict.delhigovt.nic.in/eDownload/InputForm/Input_9055.pdf' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://edistrict.delhigovt.nic.in/eDownload/InputForm/Input_9055.pdf'
+        >
+          https://edistrict.delhigovt.nic.in/eDownload/InputForm/Input_9055.pdf
+        </Link>
       </p>
     ),
   },
   {
+    id: 4,
     title: 'What is the application process?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         The Income Tax Returns form can be found here-
         <br />
-        <Link to='https://www.incometaxindia.gov.in/Pages/downloads/income-tax-return.aspx' />
+        <Link
+          className='font-medium text-teal-500'
+          to='https://www.incometaxindia.gov.in/Pages/downloads/income-tax-return.aspx'
+        >
+          https://www.incometaxindia.gov.in/Pages/downloads/income-tax-return.aspx
+        </Link>
       </p>
     ),
   },
   {
+    id: 5,
     title: 'What are the timelines?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         As per the Income Tax Act, a person is required to file his/her return
         in the relevant assessment year by July 31 (unless deadline extended) to
         claim the refund. The FY immediately succeeding a financial year is the
@@ -327,9 +395,10 @@ const financial4 = [
     ),
   },
   {
+    id: 6,
     title: ' What are the grievance redressal bodies?',
     body: (
-      <p className={`text-sm my-1`}>
+      <p className='text-sm font-light my-1'>
         At Department Level- Commissioner of Income Tax (Helpline), 23378047
         (Tele Fax), R. No. 210, C. R. Building, I. P. Estate, New Delhi.
         Email:delhi.pccit.neac@incometax.gov.in
