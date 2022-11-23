@@ -9,6 +9,7 @@ import DisabilityInfo from "./views/DisabilityInfo";
 import FindService from "./views/FindService";
 import SearchResults from "./views/SearchResults";
 import EssentialDocs from "./views/EssentialDocs";
+import Resources from "./views/Resources";
 
 const App = () => {
   // const [name, setName] = useState("rachit");
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/service" element={<FindService />}></Route>
         <Route path="/search-results" element={<SearchResults />}></Route>
         <Route path="/docs" element={<EssentialDocs />}></Route>
+        <Route path="/resources" element={<Resources />}></Route>
       </Routes>
       <Footer />
       {/* <button onClick={changeName} className="mt-40">

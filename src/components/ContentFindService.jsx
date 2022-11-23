@@ -76,6 +76,10 @@ const ContentFindService = () => {
           <div className="flex flex-col space-y-2">
             {" "}
             {/* label - input */}
+            <div className="notification w-56 p-4 shadow-md">
+              Have you got yourself or the concerned person’s screening &
+              diagnosis done? Check the steps and nearest clinics.
+            </div>
             <label className="font-medium">Type of disability?</label>
             <select
               name="dtype"
