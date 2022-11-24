@@ -30,7 +30,7 @@ const App = () => {
   // };
 
   return (
-    <div>
+    <div id="app">
       <Header />
       <Navbar />
       <Routes>

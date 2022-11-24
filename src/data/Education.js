@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 
 const education1 = [
   {
@@ -80,12 +79,12 @@ const education1 = [
     title: 'What is the application process?',
     body: (
       <p className='text-sm font-light my-1'>
-        <Link
+        <a
           className='font-medium text-teal-500'
-          to='http://edustud.nic.in/mis/studentadmission/webfom1.aspx'
+          href='http://edustud.nic.in/mis/studentadmission/webfom1.aspx'
         >
           http://edustud.nic.in/mis/studentadmission/webfom1.aspx
-        </Link>
+        </a>
       </p>
     ),
   },
@@ -98,12 +97,12 @@ const education1 = [
         academic year, generally in March/April. Specific details are available
         at:
         <br />
-        <Link
+        <a
           className='font-medium text-teal-500'
-          to='http://edustud.nic.in/mis/studentadmission'
+          href='http://edustud.nic.in/mis/studentadmission'
         >
           http://edustud.nic.in/mis/studentadmission
-        </Link>
+        </a>
       </p>
     ),
   },
@@ -174,12 +173,12 @@ const education2 = [
       <p className='text-sm font-light my-1'>
         For guidelines for admissions for CWSN under EWS/ DG category, please
         read
-        <Link
+        <a
           className='font-medium text-teal-500'
-          to='http://edustud.nic.in/mis/studentadmission/Instructionsbi-lingual%20_new%2021012018.pdf'
+          href='http://edustud.nic.in/mis/studentadmission/Instructionsbi-lingual%20_new%2021012018.pdf'
         >
           http://edustud.nic.in/mis/studentadmission/Instructionsbi-lingual%20_new%2021012018.pdf
-        </Link>
+        </a>
       </p>
     ),
   },
@@ -439,12 +438,12 @@ const education4 = [
     body: (
       <p className='text-sm font-light my-1'>
         Apply online at -
-        <Link
+        <a
           className='font-medium text-teal-500'
-          to='https://scholarships.gov.in/'
+          href='https://scholarships.gov.in/'
         >
           https://scholarships.gov.in/
-        </Link>
+        </a>
       </p>
     ),
   },
@@ -520,12 +519,12 @@ const education5 = [
     body: (
       <p className='text-sm font-light my-1'>
         Apply online at -
-        <Link
+        <a
           className='font-medium text-teal-500'
-          to='https://scholarships.gov.in/'
+          href='https://scholarships.gov.in/'
         >
           https://scholarships.gov.in/
-        </Link>
+        </a>
       </p>
     ),
   },
@@ -582,12 +581,12 @@ const education6 = [
     body: (
       <p className='text-sm font-light my-1'>
         Apply online at -
-        <Link
+        <a
           className='font-medium text-teal-500'
-          to='https://scholarships.gov.in/'
+          href='https://scholarships.gov.in/'
         >
           https://scholarships.gov.in/
-        </Link>
+        </a>
       </p>
     ),
   },
@@ -638,13 +637,13 @@ const education7 = [
     body: (
       <p className='text-sm font-light my-1'>
         Apply online at -
-        <Link
+        <a
           className='font-medium text-teal-500'
-          to='https://nfpwd.ugc.ac.in/'
+          href='https://nfpwd.ugc.ac.in/'
         >
           {' '}
           https://nfpwd.ugc.ac.in/{' '}
-        </Link>
+        </a>
       </p>
     ),
   },
@@ -703,12 +702,12 @@ const education8 = [
     body: (
       <p className='text-sm font-light my-1'>
         Offline Application is available in the link below.
-        <Link
+        <a
           className='font-medium text-teal-500'
-          to='http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50'
+          href='http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50'
         >
           http://health.delhigovt.nic.in/wps/wcm/connect/083fff004d3a3c1181a5f5d1e963ea50/DAJSAl.pdf?MOD=AJPERES&lmod=2016904728&CACHEID=083fff004d3a3c1181a5f5d1e963ea50
-        </Link>
+        </a>
         <br />
         Application needs to be submitted at: O/o Patient Welfare Cell, Room no
         1, 6th Floor, Directorate of Health Services, F-17, Karkardooma,

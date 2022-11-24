@@ -5,10 +5,10 @@ import "../styles/FindService.css";
 const ContentFindService = () => {
   const [formData, setFormData] = useState({
     date: "",
-    income: 0,
+    income: null,
     catagory: "0",
     dtype: "",
-    dpercentage: 0,
+    dpercentage: null,
   });
 
   const navigate = useNavigate();

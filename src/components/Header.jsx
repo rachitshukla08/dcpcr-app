@@ -1,4 +1,5 @@
 import "../styles/Header.css";
+import FontSizeChanger from 'react-font-size-changer';
 
 const Header = () => {
   return (
@@ -36,12 +37,20 @@ const Header = () => {
             />
           </svg>
         </span>
-        <span>
-          <span className="header-element">+A </span>
-          <span className="header-element">A</span>
-          <span className="header-element"> -A </span>
-          <span className="ml-2 header-element"> | </span>
-        </span>
+        <FontSizeChanger
+          targets={["#app"]}
+          options={{
+            stepSize: 2,
+            range: 3
+          }}
+          customButtons={{
+            up: <span>A+</span>,
+            down: <span>A-</span>,
+            styles:{
+              color: "#0a0e6a",
+            }
+          }}       
+        />
         <span className="header-element">
           <svg
             width="20"

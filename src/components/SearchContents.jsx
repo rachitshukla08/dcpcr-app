@@ -6,11 +6,16 @@ import Accordian from "./Accordian";
 const SearchContents = () => {
   const [searchParams] = useSearchParams();
 
-  const catagoryId = searchParams.get("catagory") || null;
-  const dob = searchParams.get("dob") || null; 
-  const income = searchParams.get("income");
-  const dpercentage = searchParams.get("dpercentage");
+  let catagoryId = searchParams.get("catagory") || '0';
+  let dob = searchParams.get("dob");
+  let income = searchParams.get("income") || 0;
+  let dpercentage = searchParams.get("dpercentage") || 0;
+  let query = searchParams.get("q");
+  if (income === "null") income = 999999;
+  if (!dpercentage) dpercentage = 100;
 
+  let age;
+  if(dob){
   const calculate_age = (dob) => { 
 
       var diff_ms = Date.now() - dob.getTime();
@@ -18,24 +23,43 @@ const SearchContents = () => {
 
       return Math.abs(age_dt.getUTCFullYear() - 1970);
   }
-  const age = calculate_age(new Date(dob));
+  age = calculate_age(new Date(dob));
+  }
+  console.log({catagoryId, dob, income, dpercentage, query});
   console.log(age);
   
 
   const categoryArr =
-    !catagoryId || catagoryId === "0"
+    catagoryId === "0"
       ? Data
       : Data.filter((d) => {
           return d.id === catagoryId
         });
 
-  const filteredData = categoryArr.map((c) => {
+  let filteredData;
+
+  console.log(query)
+  
+  if(query){
+    filteredData = categoryArr.map(c => {
+      let filteredEntitlements = c.entitlements.filter((e) => {
+        return e.title.toLowerCase().includes(query.toLowerCase())
+      })
+      return {...c, entitlements : filteredEntitlements};
+    })
+  }
+  else if(dob){
+    filteredData = categoryArr.map((c) => {
       let filteredEntitlements = c.entitlements.filter(({minAge,maxAge,maxIncome,minDisabilty}) => {
         return age >= minAge && age <=maxAge && income <= maxIncome && dpercentage >= minDisabilty 
       })
       return {...c, entitlements : filteredEntitlements};
-  });  
-  
+  })
+  }
+  else{
+    filteredData = categoryArr
+  }
+
   console.log(filteredData)
 
   return (
@@ -65,3 +89,4 @@ const SearchContents = () => {
 };
 
 export default SearchContents;
+
