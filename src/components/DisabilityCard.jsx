@@ -9,7 +9,7 @@ const DisabilityCard = ({ disability }) => {
         return (
           <ul className="list-disc pl-8">
             {parse(obj.liContent)}
-            <ul className={`${obj.subLiContent ? "list-disc pl-8 pt-4" : ""}`}>
+            <ul className={`${obj.subLiContent ? "pl-8 pt-4" : ""}`}>
               {parse(obj.subLiContent)}
             </ul>
           </ul>

@@ -15,14 +15,14 @@
 .centre-align {
   align-items: center;
 }
-
+/* linear-gradient(to right, #0a0d6aba, #02b86c7e), */
 .custom-img {
-  background: url("../assets/child-rights.png");
+  background-image: url("../assets/background.webp");
   background-size: cover;
 }
 
 .background-tint {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: multiply;
 }
 
@@ -30,6 +30,5 @@
   min-height: 80vh;
 }
 
-.search-icon{
-  
+.search-icon {
 }

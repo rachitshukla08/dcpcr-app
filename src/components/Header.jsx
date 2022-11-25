@@ -1,5 +1,5 @@
 import "../styles/Header.css";
-import FontSizeChanger from 'react-font-size-changer';
+import FontSizeChanger from "react-font-size-changer";
 
 const Header = () => {
   return (
@@ -41,15 +41,15 @@ const Header = () => {
           targets={["#app"]}
           options={{
             stepSize: 2,
-            range: 3
+            range: 3,
           }}
           customButtons={{
-            up: <span>A+</span>,
-            down: <span>A-</span>,
-            styles:{
+            up: <span style={{ fontSize: "16px" }}>A+</span>,
+            down: <span style={{ fontSize: "16px" }}>A-</span>,
+            styles: {
               color: "#0a0e6a",
-            }
-          }}       
+            },
+          }}
         />
         <span className="header-element">
           <svg
