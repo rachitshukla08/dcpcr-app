@@ -1,6 +1,6 @@
-import { HiAcademicCap } from "react-icons/hi";
-import { GiBrain, GiHealthNormal, GiReceiveMoney } from "react-icons/gi";
-import { FaTruck } from "react-icons/fa";
+import { HiAcademicCap } from 'react-icons/hi';
+import { GiBrain, GiHealthNormal, GiReceiveMoney } from 'react-icons/gi';
+import { FaTruck } from 'react-icons/fa';
 import {
   education1,
   education2,
@@ -10,18 +10,17 @@ import {
   education6,
   education7,
   education8,
-} from "./Education";
-import { health1, health2, health3, health4 } from "./Health";
-import { financial1, financial2, financial3, financial4 } from "./Financial";
-import { travel1, travel2, travel3, travel4 } from "./Travel";
-import { skills1, skills2, skills3 } from "./Skills";
-import { data } from "autoprefixer";
+} from './Education';
+import { health1, health2, health3, health4 } from './Health';
+import { financial1, financial2, financial3, financial4 } from './Financial';
+import { travel1, travel2, travel3, travel4 } from './Travel';
+import { skills1, skills2, skills3 } from './Skills';
 
 const Data = [
   {
-    id: "1",
-    icon: <HiAcademicCap className="text-2xl mr-4" />,
-    catagory: "Educational Schemes and Entitlements",
+    id: '1',
+    icon: <HiAcademicCap className='text-2xl mr-4' />,
+    catagory: 'Educational Schemes and Entitlements',
     entitlements: [
       {
         id: 1,
@@ -98,9 +97,9 @@ const Data = [
     ],
   },
   {
-    id: "2",
-    icon: <GiHealthNormal className="text-2xl mr-4" />,
-    catagory: "Heathcare Schemes and Entitlements",
+    id: '2',
+    icon: <GiHealthNormal className='text-2xl mr-4' />,
+    catagory: 'Heathcare Schemes and Entitlements',
     entitlements: [
       {
         id: 1,
@@ -123,7 +122,7 @@ const Data = [
       {
         id: 3,
         title:
-          "Assistance to Disabled Persons for Purchase/ Fitting of Aids and Appliances (ADIP)",
+          'Assistance to Disabled Persons for Purchase/ Fitting of Aids and Appliances (ADIP)',
         questions: health3,
         minAge: 0,
         maxAge: 100,
@@ -142,9 +141,9 @@ const Data = [
     ],
   },
   {
-    id: "3",
-    icon: <GiReceiveMoney className="text-2xl mr-4" />,
-    catagory: "Finacial Schemes and Entitlements",
+    id: '3',
+    icon: <GiReceiveMoney className='text-2xl mr-4' />,
+    catagory: 'Finacial Schemes and Entitlements',
     entitlements: [
       {
         id: 1,
@@ -167,7 +166,7 @@ const Data = [
       {
         id: 3,
         title:
-          "Income Tax Rebate for People With Disabilities under Section 80 U",
+          'Income Tax Rebate for People With Disabilities under Section 80 U',
         questions: financial3,
         minAge: 18,
         maxAge: 100,
@@ -177,7 +176,7 @@ const Data = [
       {
         id: 4,
         title:
-          "Income Tax Rebate for Individuals who have Disabled Dependants under Section 80 DD",
+          'Income Tax Rebate for Individuals who have Disabled Dependants under Section 80 DD',
         questions: financial4,
         minAge: 0,
         maxAge: 100,
@@ -187,9 +186,9 @@ const Data = [
     ],
   },
   {
-    id: "4",
-    icon: <FaTruck className="text-2xl mr-4" />,
-    catagory: "Travel Allowances Schemes and Entitlements",
+    id: '4',
+    icon: <FaTruck className='text-2xl mr-4' />,
+    catagory: 'Travel Allowances Schemes and Entitlements',
     entitlements: [
       {
         id: 1,
@@ -230,9 +229,9 @@ const Data = [
     ],
   },
   {
-    id: "5",
-    icon: <GiBrain className="text-2xl mr-4" />,
-    catagory: "Skill development and employment Schemes and Entitlements",
+    id: '5',
+    icon: <GiBrain className='text-2xl mr-4' />,
+    catagory: 'Skill development and employment Schemes and Entitlements',
     entitlements: [
       {
         id: 1,

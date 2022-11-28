@@ -17,7 +17,7 @@
 }
 /* linear-gradient(to right, #0a0d6aba, #02b86c7e), */
 .custom-img {
-  background-image: url("../assets/background.webp");
+  background-image: url('../assets/child-rights.png');
   background-size: cover;
 }
 

@@ -1,4 +1,3 @@
-
 const education1 = [
   {
     id: 1,

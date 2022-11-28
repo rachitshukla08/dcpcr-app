@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "../styles/FindService.css";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../styles/FindService.css';
 
 const ContentFindService = () => {
   const [formData, setFormData] = useState({
-    date: "",
+    date: '',
     income: null,
     catagory: [],
-    dtype: "",
+    dtype: '',
     dpercentage: null,
   });
 
@@ -39,131 +39,136 @@ const ContentFindService = () => {
   };
 
   return (
-    <div className="container my-12 w-[700px] shadow-lg rounded m-auto custom-border">
-      <div className=" px-8 py-4 rounded-t">
-        <h3 className="font-semibold text-2xl">
+    <div className='container my-12 mx-auto w-[700px] shadow-lg rounded custom-border'>
+      <div className=' px-8 py-4 rounded-t'>
+        <h3 className='font-semibold text-2xl'>
           Let us help you find relevant scheme and services for you!
         </h3>
       </div>
-      <form className="space-y-8 px-8 py-4" onSubmit={handleSubmit}>
-        <div className="flex flex-col space-y-4">
-          <label className="font-normal text-gray-600">Date of birth *</label>
+      <form className='space-y-8 px-8 py-4' onSubmit={handleSubmit}>
+        <div className='flex flex-col space-y-4'>
+          <div>
+            <label className='font-normal text-gray-600'>Date of birth</label>
+            <span className='float-right font-normal text-gray-600'>
+              (Required)
+            </span>
+          </div>
           <input
-            className="px-4 py-2 rounded border-2 outline-none hover:border-[#02B86B] focus:border-[#02B86B]"
-            type="date"
-            name="date"
+            className='px-4 py-2 rounded border-2 outline-none transition hover:border-[#02B86B] focus:border-[#02B86B]'
+            type='date'
+            name='date'
             value={formData.date}
             onChange={handleChange}
             required
           />
         </div>
 
-        <div className="flex flex-col space-y-4">
+        <div className='flex flex-col space-y-4'>
           <div>
-            <label className="font-normal text-gray-600">
+            <label className='font-normal text-gray-600'>
               Annual family income
             </label>
-            <span className="float-right font-normal text-gray-600">
+            <span className='float-right font-normal text-gray-600'>
               (Optional)
             </span>
           </div>
           <input
-            className="px-4 py-2 border-2 rounded outline-none hover:border-[#02B86B] focus:border-[#02B86B]"
-            type="number"
+            className='px-4 py-2 border-2 rounded outline-none transition hover:border-[#02B86B] focus:border-[#02B86B]'
+            type='number'
             min={0}
-            name="income"
+            name='income'
             value={formData.income}
             onChange={handleChange}
           />
         </div>
 
-        <div className="flex flex-col space-y-4">
+        <div className='flex flex-col space-y-4'>
           <div>
-            <label className="font-normal text-gray-600">
+            <label className='font-normal text-gray-600'>
               Any specific category of scheme and services, you are interested
               in
             </label>
-            <span className="float-right font-normal text-gray-600">
+            <span className='float-right font-normal text-gray-600'>
               (Optional)
             </span>
           </div>
-          <div className="flex flex-wrap">
-            <div className="grow">
+          <div className='flex flex-wrap'>
+            <div className='grow'>
               <input
-                type="checkbox"
-                className="hidden peer"
-                id="educational"
-                name="catagory"
+                type='checkbox'
+                className='hidden peer'
+                id='educational'
+                name='catagory'
                 onChange={handleCheckBox}
-                value="1"
+                value='1'
               />
               <label
-                htmlFor="educational"
-                className="block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02b86b] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='educational'
+                className='block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02b86b] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Educational
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="checkbox"
-                className="hidden peer"
-                id="financial"
-                name="catagory"
+                type='checkbox'
+                className='hidden peer'
+                id='financial'
+                name='catagory'
                 onChange={handleCheckBox}
-                value="2"
+                value='2'
               />
               <label
-                htmlFor="financial"
-                className="block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='financial'
+                className='block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Financial
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="checkbox"
-                className="hidden peer"
-                id="health"
-                name="catagory"
+                type='checkbox'
+                className='hidden peer'
+                id='health'
+                name='catagory'
                 onChange={handleCheckBox}
-                value="3"
+                value='3'
               />
               <label
-                htmlFor="health"
-                className="block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='health'
+                className='block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Health
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="checkbox"
-                className="hidden peer"
-                id="travel"
-                name="catagory"
+                type='checkbox'
+                className='hidden peer'
+                id='travel'
+                name='catagory'
                 onChange={handleCheckBox}
-                value="4"
+                value='4'
               />
               <label
-                htmlFor="travel"
-                className="block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='travel'
+                className='block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Travel
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="checkbox"
-                className="hidden peer"
-                id="skills"
-                name="catagory"
+                type='checkbox'
+                className='hidden peer'
+                id='skills'
+                name='catagory'
                 onChange={handleCheckBox}
-                value="5"
+                value='5'
               />
               <label
-                htmlFor="skills"
-                className="block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='skills'
+                className='block text-center font-medium mb-2 mr-1 py-4 px-6 border-2 rounded transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Skills
               </label>
@@ -176,102 +181,102 @@ const ContentFindService = () => {
             Have you got yourself or the concerned person's screening &
             diagnosis done? Check the steps and nearest clinics.
           </div> */}
-        <div className="flex flex-col space-y-4">
+        <div className='flex flex-col space-y-4'>
           <div>
-            <label className="font-normal text-gray-600">
+            <label className='font-normal text-gray-600'>
               Type of disability
             </label>
-            <span className="float-right font-normal text-gray-600">
+            <span className='float-right font-normal text-gray-600'>
               (Optional)
             </span>
           </div>
-          <div className="flex flex-wrap">
-            <div className="grow">
+          <div className='flex flex-wrap'>
+            <div className='grow'>
               <input
-                type="radio"
-                className="hidden peer"
-                id="physical"
-                name="dtype"
-                value="1"
+                type='radio'
+                className='hidden peer'
+                id='physical'
+                name='dtype'
+                value='1'
               />
               <label
-                htmlFor="physical"
-                className="block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='physical'
+                className='block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Physical Disability
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="radio"
-                className="hidden peer"
-                id="intellectual"
-                name="dtype"
-                value="2"
+                type='radio'
+                className='hidden peer'
+                id='intellectual'
+                name='dtype'
+                value='2'
               />
               <label
-                htmlFor="intellectual"
-                className="block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='intellectual'
+                className='block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Intellectual Disability
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="radio"
-                className="hidden peer"
-                id="mental"
-                name="dtype"
-                value="3"
+                type='radio'
+                className='hidden peer'
+                id='mental'
+                name='dtype'
+                value='3'
               />
               <label
-                htmlFor="mental"
-                className="block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='mental'
+                className='block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Mental Disability
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="radio"
-                className="hidden peer"
-                id="neuro"
-                name="dtype"
-                value="4"
+                type='radio'
+                className='hidden peer'
+                id='neuro'
+                name='dtype'
+                value='4'
               />
               <label
-                htmlFor="neuro"
-                className="block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='neuro'
+                className='block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Neurological Disability
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="radio"
-                className="hidden peer"
-                id="blood"
-                name="dtype"
-                value="5"
+                type='radio'
+                className='hidden peer'
+                id='blood'
+                name='dtype'
+                value='5'
               />
               <label
-                htmlFor="blood"
-                className="block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='blood'
+                className='block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Blood Disorder
               </label>
             </div>
-            <div className="grow">
+            <div className='grow'>
               <input
-                type="radio"
-                className="hidden peer"
-                id="multiple"
-                name="dtype"
-                value="5"
+                type='radio'
+                className='hidden peer'
+                id='multiple'
+                name='dtype'
+                value='5'
               />
               <label
-                htmlFor="multiple"
-                className="block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]"
+                htmlFor='multiple'
+                className='block text-center font-medium mb-2 mr-1 p-4 border-2 rounded-full transition hover:border-[#02B86B] hover:text-[#02B86B] peer-checked:bg-[#02B86B] peer-checked:text-white peer-checked:border-[#02B86B]'
               >
                 Multiple Disability
               </label>
@@ -280,37 +285,31 @@ const ContentFindService = () => {
         </div>
         {/* </div> */}
 
-        <div className="flex flex-col space-y-4">
+        <div className='flex flex-col space-y-4'>
           <div>
-            <label className="font-normal text-gray-600">
+            <label className='font-normal text-gray-600'>
               Disability percentage
             </label>
-            <span className="float-right font-normal text-gray-600">
+            <span className='float-right font-normal text-gray-600'>
               (Optional)
             </span>
           </div>
           <input
-            className="px-4 py-2 border-2 rounded outline-none hover:border-[#02B86B] focus:border-[#02B86B]"
-            type="number"
+            className='px-4 py-2 border-2 rounded outline-none transition hover:border-[#02B86B] focus:border-[#02B86B]'
+            type='number'
             min={0}
             max={100}
             step={5}
-            name="dpercentage"
+            name='dpercentage'
             value={formData.dpercentage}
             onChange={handleChange}
           />
         </div>
 
-        <div className="flex justify-around items-center">
+        <div className='flex justify-around items-center'>
           <button
-            className="w-32 border  hover:bg-gray-100 px-4 py-2 rounded-md custom-reset"
-            type="reset"
-          >
-            Reset
-          </button>
-          <button
-            className="w-32 bg-[#02B86B] text-white px-4 py-2 rounded custom-submit"
-            type="submit"
+            className='h-12 w-32 bg-[#02B86B] text-white px-4 py-2 rounded custom-submit'
+            type='submit'
           >
             Search
           </button>

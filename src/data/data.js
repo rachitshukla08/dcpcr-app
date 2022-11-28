@@ -1,24 +1,17 @@
 const homeContent = {
-  title: "Child Rights",
-  content: `The Delhi Commission for Protection of Child Rights has attempted to
-  create extensive repository of all existing entitlements and
-  relevant information which could be of benefit to Persons with
-  Disabilities & their caregivers in Delhi. This website aims to
-  address the information asymmetry by creating awareness about the
-  rights of Persons with Disabilities, especially Children with
-  Special Needs or Children who have parents with disabilities &
-  assist them in understanding the means of leveraging rightful
-  entitlements for their own benefit.`,
-  getStarted: "Get started",
-  rights: "Click to know your rights & entitlement",
+  title: 'The Right Guide',
+  content: `The Right Guide is for anyone seeking information on Rights & Entitlement, Resources & Support for Person(s) with disability in Delhi. Start your search by clicking below on 'Get Started' and fill in a few details for us to customize relevant information for you.
+  `,
+  getStarted: 'Get started',
+  rights: 'Click to know your rights & entitlement',
 };
 
 const navlinks = [
-  { name: "Home", path: "/" },
-  { name: "Find the Service", path: "/service" },
-  { name: "Disability info", path: "/disability-info" },
-  { name: "Essential Docs", path: "/docs" },
-  { name: "Resources", path: "/resources" },
+  { name: 'Home', path: '/' },
+  { name: 'Find the Service', path: '/service' },
+  { name: 'Disability info', path: '/disability-info' },
+  { name: 'Essential Docs', path: '/docs' },
+  { name: 'Resources', path: '/resources' },
 ];
 
 const contentDis = {
@@ -28,42 +21,42 @@ const contentDis = {
   defaultLink: `https://legislative.gov.in/sites/default/files/A2016-49_1.pdf`,
   cards: [
     {
-      name: "Physical Disability",
-      content: "_PhysicalDisabilty",
-      type: "physical",
-      imgUrl: "../assets/disability/physical.png",
+      name: 'Physical Disability',
+      content: '_PhysicalDisabilty',
+      type: 'physical',
+      imgUrl: '../assets/disability/physical.png',
     },
     {
-      name: "Intellectual Disability",
-      content: "_Intellectual Disability",
-      type: "intellectual",
+      name: 'Intellectual Disability',
+      content: '_Intellectual Disability',
+      type: 'intellectual',
     },
     {
-      name: "Mental Disability",
-      content: "_Mental",
-      type: "mental",
+      name: 'Mental Disability',
+      content: '_Mental',
+      type: 'mental',
     },
     {
-      name: "Neurological",
-      content: "_Neurological",
-      type: "neurological",
+      name: 'Neurological',
+      content: '_Neurological',
+      type: 'neurological',
     },
     {
-      name: "Blood Disorder",
-      content: "_Blood Disorder",
-      type: "blood",
+      name: 'Blood Disorder',
+      content: '_Blood Disorder',
+      type: 'blood',
     },
     {
-      name: "Multiple Disability",
-      content: "_Multiple Disability",
-      type: "multiple",
+      name: 'Multiple Disability',
+      content: '_Multiple Disability',
+      type: 'multiple',
     },
   ],
 
   physical: {
-    title: "Physical Disability",
+    title: 'Physical Disability',
     titleContent:
-      "Under the overall ambit of Physical Disability, three types of disabilities are broadly classified:",
+      'Under the overall ambit of Physical Disability, three types of disabilities are broadly classified:',
     content: [
       {
         liContent: `<li>Locomotor Disabilities:</li><span class="fw-400">Locomotor Disability is the disability of the bones, joints or muscles leading to substantial restriction of the movement of the limbs or a usual form of cerebral palsy. Different types of locomotor disabilities are classified as the following-</span>`,
@@ -90,9 +83,9 @@ const contentDis = {
   },
 
   intellectual: {
-    title: "Intellectual Disability",
+    title: 'Intellectual Disability',
     titleContent:
-      "Under the ambit of intellectual disabilities, two types of disabilities are broadly classified-",
+      'Under the ambit of intellectual disabilities, two types of disabilities are broadly classified-',
     content: [
       {
         liContent: `<li>Specific Learning Disabilities</li><span class="fw-400">Affects a person’s ability to acquire, process and/or use either, spoken, read, written or nonverbal information.</span>`,
@@ -106,8 +99,8 @@ const contentDis = {
   },
 
   mental: {
-    title: "Mental behaviour ",
-    titleContent: "",
+    title: 'Mental behaviour ',
+    titleContent: '',
     content: [
       {
         liContent: `<li>Mental Illness</li></br><span class="fw-400">A substantial disorder of thinking, mood, perception, orientation or memory that grossly impairs judgement, behaviour, capacity to recognise reality or ability to meet the ordinary demands of life, but does not include retardation which is a condition of arrested or incomplete development of mind of a person, specially characterised by subnormality of intelligence.</span>`,
@@ -117,8 +110,8 @@ const contentDis = {
   },
 
   neurological: {
-    title: "Neurological",
-    titleContent: "Disability caused due to chronic neurological conditions-",
+    title: 'Neurological',
+    titleContent: 'Disability caused due to chronic neurological conditions-',
     content: [
       {
         liContent: `<li>Multiple sclerosis</li><span class="fw-400">A disease in which the immune system eats away the protective covering of nerves leading to damage to the protective covering (myelin sheath) that surrounds nerve fibres in the brain and affecting the ability of nerve cells in the brain and spinal cord to communicate with each other.</span>`,
@@ -132,8 +125,8 @@ const contentDis = {
   },
 
   blood: {
-    title: "Blood Disorder",
-    titleContent: "Disability caused due to Blood disorders",
+    title: 'Blood Disorder',
+    titleContent: 'Disability caused due to Blood disorders',
     content: [
       {
         liContent: `<li>Haemophilia</li><span class="fw-400">An inheritable disease, usually affecting only male but transmitted by women to their male children, characterised by loss or impairment of the normal clotting ability of blood so that a minor wound may result in fatal bleeding.</span>`,
@@ -151,56 +144,56 @@ const contentDis = {
   },
 
   multiple: {
-    title: "Multiple Disabilities",
+    title: 'Multiple Disabilities',
     titleContent:
-      "A condition in which a person may have a combination of hearing and visual impairments causing severe   communication, developmental, and educational problems. (More than one of the above-specified disabilities).",
+      'A condition in which a person may have a combination of hearing and visual impairments causing severe   communication, developmental, and educational problems. (More than one of the above-specified disabilities).',
     content: [
       {
-        liContent: "",
-        subLiContent: "",
+        liContent: '',
+        subLiContent: '',
       },
     ],
   },
 };
 
 const serviceForm = {
-  formHeading: "Let us help you find relevant scheme and services for you!",
-  dob: "Date of Birth",
-  dobPlaceholder: "DD/MM/YYYY",
-  familyIncome: "Annual Family Income (Optional)",
+  formHeading: 'Let us help you find relevant scheme and services for you!',
+  dob: 'Date of Birth',
+  dobPlaceholder: 'DD/MM/YYYY',
+  familyIncome: 'Annual Family Income (Optional)',
   category:
-    "Any specific category of scheme and services, you are interested in? (Optional)",
-  disabilityType: "Type of disability?",
-  disabilityPercentage: "Disability percentage% (Optional)",
+    'Any specific category of scheme and services, you are interested in? (Optional)',
+  disabilityType: 'Type of disability?',
+  disabilityPercentage: 'Disability percentage% (Optional)',
   incomeList: [
-    "0 - 20,000",
-    "20,000 - 50,000",
-    "50,000 - 2,50,000",
-    "2,50,000 - 5,00,000",
-    "5,00,000 or above",
+    '0 - 20,000',
+    '20,000 - 50,000',
+    '50,000 - 2,50,000',
+    '2,50,000 - 5,00,000',
+    '5,00,000 or above',
   ],
   categoryList: [
-    "All",
-    "Educational",
-    "Health",
-    "Financial",
-    "Skill & Employment",
+    'All',
+    'Educational',
+    'Health',
+    'Financial',
+    'Skill & Employment',
   ],
   disabilityList: [
-    "Physical disability",
-    "Intellectual disability",
-    "Mental disability",
-    "Neurological",
-    "Blood disorder",
-    "Multiple disability",
+    'Physical disability',
+    'Intellectual disability',
+    'Mental disability',
+    'Neurological',
+    'Blood disorder',
+    'Multiple disability',
   ],
 };
 
 const essentialDocs = {
   card: {
-    title: "Essential Documents for a Person with Disability",
+    title: 'Essential Documents for a Person with Disability',
     titleContent:
-      "A person with a benchmark disability as defined above will require a Disability Certificate & Unique Disability ID to avail benefits under various schemes and entitlements. ",
+      'A person with a benchmark disability as defined above will require a Disability Certificate & Unique Disability ID to avail benefits under various schemes and entitlements. ',
     content: [
       {
         liContent: `<li>Disability Certificate: </li><span class="fw-400">Disability Certificate or Handicap Certificate (as it may alternatively be called) is a document that certifies the type and degree of disability that has affected the person.</span>`,
@@ -215,8 +208,8 @@ const essentialDocs = {
 };
 
 const resources = {
-  title: "Important Resources",
-  titleContent: "",
+  title: 'Important Resources',
+  titleContent: '',
   content: [
     {
       liContent: `<li>Important notification or circular</li> 
@@ -226,7 +219,7 @@ const resources = {
     <li>List of resource centers </li>
     <li>List of medical authorities  </li>
     `,
-      subLiContent: "",
+      subLiContent: '',
     },
   ],
 };
