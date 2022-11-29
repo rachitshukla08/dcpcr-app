@@ -212,15 +212,41 @@ const resources = {
   titleContent: '',
   content: [
     {
-      liContent: `<li>Important notification or circular</li> 
-    <li>Important Handbooks/Guidebook </li>
-    <li>Article </li>
-    <li>Publication </li>
-    <li>List of resource centers </li>
-    <li>List of medical authorities  </li>
+      liContent: `
+      <li>1. Disability Handbook (the finalized draft can be uploaded later) </li> </li>
     `,
-      subLiContent: '',
+      subLiContent: ``,
     },
+    {
+      liContent: ` 
+      <li>2. Acts & Rule for the Welfare of Persons with Disabilities</li>      
+    `,
+      subLiContent: `<li>Rights of the Persons with Disabilities Act, 2016 <a className='text-light text-teal-500' href='https://socialwelfare.delhigovt.nic.in/sites/default/files/All-PDF/RPWD%20ACT%202016.pdf'> Click here to view. </a></li>
+      <li>National Trust Act, 1999 <a className='text-light text-teal-500' href='https://socialwelfare.delhigovt.nic.in/sites/default/files/All-PDF/National_Trust_Act1999.pdf'> Click here to view.</a> </li>
+      <li>Delhi RPwD Rules, 2018 <a className='text-light text-teal-500' href='https://socialwelfare.delhigovt.nic.in/sites/default/files/All-PDF/Delhi%20RPwD%20Rules2018.pdf'> Click here to view.</a> </li>`,
+    },
+    {
+      liContent: `
+      <li>3. Grievance Redressal Bodies </li>
+    `,
+      subLiContent: `<li> Office of the State Commissioner for Persons with Disabilities <a className='text-teal-500' href='https://drive.google.com/file/d/1_NWWldCPV4zDLxbP7fdduoXF2enMbSNB/view?usp=sharing'> (Page 40 of Handbook)</a></li>
+      <li> Delhi Commission for Protection of Child Rights (DCPCR) <a className='text-teal-500' href='https://drive.google.com/file/d/1_NWWldCPV4zDLxbP7fdduoXF2enMbSNB/view?usp=sharing'> (Page 41 of Handbook)</a></li>
+    `,
+    },
+    {
+      liContent: `
+      <li>4. Repository of Institutions for Disabled Persons </li>
+    `,
+      subLiContent: `<li> Institutions and Special Schools for the Welfare of Persons with Disabilities <a className='text-teal-500' href='https://drive.google.com/file/d/1_NWWldCPV4zDLxbP7fdduoXF2enMbSNB/view?usp=sharing'> (Page 43 of Handbook)</a></li>
+      <li> Disability - wise Medical Authorities for issuance of disability certificate <a className='text-teal-500' href='https://drive.google.com/file/d/1_NWWldCPV4zDLxbP7fdduoXF2enMbSNB/view?usp=sharing'> (Page 59 of Handbook)</a></li>
+      <li> List of NGOs Registered under section 52 of PWD Act 1995 <a className='text-teal-500' href='https://drive.google.com/file/d/1_NWWldCPV4zDLxbP7fdduoXF2enMbSNB/view?usp=sharing'> (Page 85 of Handbook)</a></li>`,
+    },
+    // {
+    //   liContent: `
+    //   Note : Pt. 3 & 4 can be taken from the chapter 9 & 10 of the handbook ( Access to handbook : <a className='text-teal-500' href='https://drive.google.com/file/d/1_NWWldCPV4zDLxbP7fdduoXF2enMbSNB/view?usp=sharing'> HandBook </a>)
+    // `,
+    //   subLiContent: ``,
+    // },
   ],
 };
 
