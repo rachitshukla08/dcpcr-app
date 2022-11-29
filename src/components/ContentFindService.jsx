@@ -48,7 +48,7 @@ const ContentFindService = () => {
       <form className='space-y-8 px-8 py-4' onSubmit={handleSubmit}>
         <div className='flex flex-col space-y-4'>
           <div>
-            <label className='font-normal text-gray-600'>Date of birth</label>
+            <label className='font-medium'>Date of birth</label>
             <span className='float-right font-normal text-gray-600'>
               (Required)
             </span>
@@ -65,9 +65,7 @@ const ContentFindService = () => {
 
         <div className='flex flex-col space-y-4'>
           <div>
-            <label className='font-normal text-gray-600'>
-              Annual family income
-            </label>
+            <label className='font-medium'>Annual family income</label>
             <span className='float-right font-normal text-gray-600'>
               (Optional)
             </span>
@@ -84,7 +82,7 @@ const ContentFindService = () => {
 
         <div className='flex flex-col space-y-4'>
           <div>
-            <label className='font-normal text-gray-600'>
+            <label className='font-medium'>
               Any specific category of scheme and services, you are interested
               in
             </label>
@@ -183,9 +181,7 @@ const ContentFindService = () => {
           </div> */}
         <div className='flex flex-col space-y-4'>
           <div>
-            <label className='font-normal text-gray-600'>
-              Type of disability
-            </label>
+            <label className='font-medium'>Type of disability</label>
             <span className='float-right font-normal text-gray-600'>
               (Optional)
             </span>
@@ -287,9 +283,7 @@ const ContentFindService = () => {
 
         <div className='flex flex-col space-y-4'>
           <div>
-            <label className='font-normal text-gray-600'>
-              Disability percentage
-            </label>
+            <label className='font-medium'>Disability percentage</label>
             <span className='float-right font-normal text-gray-600'>
               (Optional)
             </span>
